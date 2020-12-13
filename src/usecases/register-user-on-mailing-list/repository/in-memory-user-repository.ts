@@ -20,7 +20,7 @@ export class InMemoryUserRepository implements UserRepository {
     return found || null
   }
 
-  async findAllUser (): Promise<UserData[]> {
+  async findAllUsers (): Promise<UserData[]> {
     return this.repository
   }
 
