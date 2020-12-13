@@ -23,7 +23,7 @@ describe('In memory User repository', () => {
     const users: UserData[] = [{ name: 'any_name', email: 'any@mail.com' },
       { name: 'second_name', email: 'second@mail.com' }]
     const sut = new InMemoryUserRepository(users)
-    const returnedUsers = await sut.findAllUser()
+    const returnedUsers = await sut.findAllUsers()
     expect(await returnedUsers.length).toBe(2)
   })
 })
