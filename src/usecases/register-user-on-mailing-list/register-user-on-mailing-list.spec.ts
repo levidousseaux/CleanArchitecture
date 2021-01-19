@@ -1,7 +1,4 @@
 import { UserData } from '../../entities/user-data'
-import { InvalidEmailError } from '../../errors/invalid-email-error'
-import { InvalidNameError } from '../../errors/invalid-name-error'
-import { left } from '../../shared/either'
 import { UserRepository } from './ports/user-repository'
 import { RegisterUserOnMailingList } from './register-user-on-mailing-list'
 import { InMemoryUserRepository } from './repository/in-memory-user-repository'
